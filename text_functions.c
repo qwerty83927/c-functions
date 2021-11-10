@@ -19,3 +19,14 @@ text[0] = A;
 text[1] = B;
 return p;
 }
+
+char* append_char(const char* A, const char B) {
+char* text = NULL;
+text = malloc(sizeof(char) + strlen(A));
+int i;
+for (i = 0; i < strlen(A); ++i) {
+text[i] = A[i];
+}
+text[strlen(A)] = B;
+return p;
+}
