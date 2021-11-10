@@ -12,6 +12,7 @@ strcat(result, s2);
 return result;
 }
 
+// for adding to chars to make a string
 char* bind_char(const char A, const char B) {
 char* p = NULL;
 text = malloc(sizeof(char) + 5);
@@ -20,6 +21,7 @@ text[1] = B;
 return p;
 }
 
+// for adding a char at the end of a string
 char* append_char(const char* A, const char B) {
 char* text = NULL;
 text = malloc(sizeof(char) + strlen(A));
