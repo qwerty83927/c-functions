@@ -46,3 +46,12 @@ text = append_char(text,c);
 }
 return text;
 }
+
+// for getting a input from user
+char* input(void) {
+char string[100];
+scanf("%[^\n]s",string);
+char* text = malloc(sizeof(string));
+text = string;
+return text;
+}
