@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "text_functions.c"
+#include "file_functions.c"
 
 // test functions here
 int main(void) {
