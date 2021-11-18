@@ -33,18 +33,15 @@ text[strlen(A)] = B;
 return p;
 }
 
-// for reading text files
-// note that this may not work for windows or macs
-char* read_Tfile(const char* file_name) {
-char c;
-char* text = "";
-FILE* fd = fopen(file_name,"r");
-while(1) {
-c = fgetc(fd);
-if(feof(fd)) {break;}
-text = append_char(text,c);
+char* replace_chars(const char* text1, const char letter, const char rep) {
+char* text2 = "";
+int i; int j;
+for(i = 0; i < strlen(text1); ++i) {
+char c = text1[i];
+if(c == letter) {text2 = append_char(text2,rep);}
+else {text2 = append_char(text2,c);}
 }
-return text;
+return text2;
 }
 
 // for getting a input from user
